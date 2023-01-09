@@ -47,3 +47,9 @@ When customizing privacy for people insights, you can observe behavioral changes
 * Microsoft 365 [profile card](https://support.microsoft.com/office/profile-cards-in-microsoft-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501)
 * User profile in Delve
 * [Listing relevant people](/graph/api/user-list-people)
+* People highlights in the Microsoft Feed
+  *  The Microsoft Feed experience includes presentation of highlights about people to the user. For example if one of the user's top collaborators has changed their presence state to *out of office*, then the Microsoft Feed might present that information to the user if considered relevant.
+  *  The set representing a user's *top collaborators* is computed based on collaboration activities between the user and other users such as email correspondance and  meetings.
+  *  The user's set of top collaborators is never shared with any other users and considered private to the user. It is only used to enrich the user's own experience. 
+  *  If the organization administrator or an individual user does not want this information computed and stored, then they can turn off people insights as described above.
+  *  Turning it off will change the behavior of UIs that benefit from knowing who the user's top collaborators are. For example, the Microsoft Feed might show people highlights for users that are not relevant to the user.
